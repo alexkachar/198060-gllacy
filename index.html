@@ -13,7 +13,7 @@
           <img src="http://placehold.it/150x100" alt="Glacy Shop">
         </div>
 
-        <nav class="main-nav">
+        <nav class="page-nav">
           <ul>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка и оплата</a></li>
@@ -21,18 +21,18 @@
           </ul>
         </nav>
 
-        <div class="user-block">
-          <ul>
-            <li>
-              <form class="user-block-search" action="#" method="POST">
-                <input type="button" placeholder="">
-                <input type="search" placeholder="">
-              </form>
-            </li>
-            <li><a class="user-block-btn user-block-btn-enter" href="">Вход</a></li>
-            <li><a class="user-block-btn user-block-btn-basket" href="">Пусто</a></li>
-          </ul>
-        </div>
+
+        <ul class="user-block">
+          <li>
+            <form class="user-block-search" action="#" method="POST">
+              <input type="button" placeholder="">
+              <input type="search" placeholder="">
+            </form>
+          </li>
+          <li><a class="user-block-btn user-block-btn-enter" href="">Вход</a></li>
+          <li><a class="user-block-btn user-block-btn-basket" href="">Пусто</a></li>
+        </ul>
+
 
       </div> <!-- от контейнера-->
 
@@ -42,10 +42,7 @@
 
     </header>
 
-
-
     <main class="content">
-
       <div class="container">
 
         <!-- <div class="slider">
@@ -67,48 +64,46 @@
         </div> -->
 
 
-          <div class="promos clearfix">
-            <section class="promos-item promos-item-left">
-              <h2>Малинка даром!</h2>
-              <p>При покупке 2 кг любого фруктового мороженного,
-              добавим в ваш заказ банку малинового варения бесплатно.</p>
-              <a href="#" class="btn">Хочу варенье!</a>
-            </section>
-            <section class="promos-item promos-item-right">
-              <span class="promos-header">Шоколадки даром!</span>
-              <p class="promos-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку
-              вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <a href="#" class="btn">Хочу шоколадки!</a>
-            </section>
-          </div>
+        <div class="promos clearfix">
+          <section class="promos-item promos-item-left">
+            <h2>Малинка даром!</h2>
+            <p>При покупке 2 кг любого фруктового мороженного,
+            добавим в ваш заказ банку малинового варения бесплатно.</p>
+            <a href="#" class="btn">Хочу варенье!</a>
+          </section>
+        <section class="promos-item promos-item-right">
+            <span class="promos-header">Шоколадки даром!</span>
+            <p class="promos-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку
+            вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a href="#" class="btn">Хочу шоколадки!</a>
+          </section>
+        </div>
 
 
-          <div class="ice-creams">
-            <div class="ice-cream">
-              <div class="ice-cream-img">
-                <img src="http://placehold.it/150x100" alt="">
-              </div>
-              <div class="ice-cream-price">310&#8381;/кг</div>
-              <a class="ice-cream-link" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-              <a class="btn" href="">Подробнее</a>
-            </div>
-            <div class="ice-cream">
-              <img src="http://placehold.it/150x100" alt="">
-              <div>380&#8381;/кг</div>
-              <p class="item-text">Сливочно-кофейное с кусочками шоколада</p>
-            </div>
-            <div class="ice-cream">
-              <img src="http://placehold.it/150x100" alt="">
-              <div>355&#8381;/кг</div>
-              <p class="item-text">Сливочно-клубничное с присыпкой
-                 из белого шоколада</p>
-            </div>
-            <div class="ice-cream">
-              <img src="http://placehold.it/150x100" alt="">
-              <div>415&#8381;/кг</div>
-              <p class="item-text">Сливочное крем-брюле с карамельной подливкой</p>
-            </div>
+        <div class="products">
+          <div class="products-item">
+            <figure class="products-item-img"><img src="http://placehold.it/150x100" alt=""></figure>
+            <div>310&#8381;/кг</div>
+            <p class="products-item-text">Сливочное с апельсиновым джемом
+               и цитрусовой стружкой</p>
           </div>
+          <div class="products-item">
+            <figure class="products-item-img"><img src="http://placehold.it/150x100" alt=""></figure>
+            <div>380&#8381;/кг</div>
+            <p class="products-item-text">Сливочно-кофейное с кусочками шоколада</p>
+          </div>
+          <div class="products-item">
+            <figure class="products-item-img"><img src="http://placehold.it/150x100" alt=""></figure>
+            <div>355&#8381;/кг</div>
+            <p class="products-item-text">Сливочно-клубничное с присыпкой
+               из белого шоколада</p>
+          </div>
+          <div class="products-item">
+            <figure class="products-item-img"><img src="http://placehold.it/150x100" alt=""></figure>
+            <div>415&#8381;/кг</div>
+            <p class="products-item-text">Сливочное крем-брюле с карамельной подливкой</p>
+          </div>
+        </div>
 
 
           <section class="features">
@@ -122,7 +117,7 @@
             <div class="features-item features-item-thermometer">Доставка нашего мороженного до заказчиков осущуствляется в специальном термопаке, который не дает мороженному растаять в пути и  позволяе сохранить свой превосходный вкус.</div>
           </section>
 
-          <div class="clearfix">
+          <div class="info clearfix">
             <section class="blog-news">
               <h3>Новое в нашем блоге</h3>
               <a href="" class="blog-news-link">10 способов сервировки фруктовых щербетов

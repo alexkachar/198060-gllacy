@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -11,7 +12,7 @@
       <div class="container clearfix">
 
         <div class="page-header-logo">
-          <img src="img/page-header-logo.svg" alt="Glacy Shop">
+          <img src="img/page-header-logo.svg" width="153" height="63" alt="Glacy Shop">
         </div>
 
         <nav class="page-nav">
@@ -38,7 +39,7 @@
       </div> <!-- от контейнера-->
 
       <div class="page-header-worktime">
-        <p>С 10 до 20, ежедневно<span>8 812 450-25-25</span></p>
+        <p>С 10 до 20, ежедневно<br><span>8 812 450-25-25</span></p>
       </div>
 
     </header>
@@ -83,7 +84,7 @@
 
         <div class="products">
           <div class="products-item">
-            <figure class="products-item-img"><img src="img/item-orange.jpg" alt=""></figure>
+            <figure class="products-item-img"><img src="img/item-orange.jpg" alt="" width="267px" height="267px"></figure>
             <div class="products-item-price">310&#8381;/<span>кг</span></div>
             <p class="products-item-text">Сливочное с апельсиновым джемом
                и цитрусовой стружкой</p>
@@ -125,20 +126,22 @@
               к столу</a>
             </section>
             <section class="subscribe">
-              <p>Подпишитесь на нашу сладкую рассылку и будете
-              всегда в курсу всего самого вкусного, что у нас происходит. Общаем не спамить
-              и не слать вской не нужной ерунды. Честно =)</p>
-              <form action="post">
-                <input type="email" placeholder="Электронная почта">
-                <button class="btn" type="submit">Отправить</button>
-              </form>
+              <div class="subscribe-cover">
+                <p>Подпишитесь на нашу сладкую рассылку и будете
+                всегда в курсу всего самого вкусного, что у нас происходит. Общаем не спамить
+                и не слать вской не нужной ерунды. Честно =)</p>
+                <form action="post">
+                  <input type="email" placeholder="Электронная почта">
+                  <button class="btn" type="submit">Отправить</button>
+                </form>
+              </div>
             </section>
           </div>
 
       </div> <!-- / .container -->
 
       <div class="map">
-        <div class="map-frame"><img src="http://placehold.it/150x100" alt=""></div>
+        <div class="map-frame"><img src="img/map.jpg" width="1200px" height="436px" alt=""></div>
         <div class="container">
           <div class="map-info">
             <p>Адрес главного офиса и офлайн-магазина:<br>
@@ -157,12 +160,12 @@
 
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container clearfix">
         <ul class="social">
-          <li><a class="social-btn social-btn-tw" href="#">Твиттер</a></li>
-          <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
-          <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-          <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+          <li><a class="social-btn social-btn-tw" href="#"><img src="img/icon-twitter.svg" height="40" width="40"/></a></li>
+          <li><a class="social-btn social-btn-inst" href="#"><img src="img/icon-instagram.svg" height="40" width="40"/></a></li>
+          <li><a class="social-btn social-btn-fb" href="#"><img src="img/icon-facebook.svg" height="40" width="40"/></a></li>
+          <li><a class="social-btn social-btn-vk" href="#"><img src="img/icon-vk.svg" height="40" width="40"/></a></li>
         </ul>
         <ul class="page-footer-nav">
           <li><a href="#">Для поставщиков</a></li>
@@ -172,7 +175,7 @@
         </ul>
         <div class="page-footer-copyright">
           <a class="page-footer-logo">
-            <img src="img/academy-logo.svg" alt="html academy">
+            <img src="img/academy-logo.svg" width="108" height="37" alt="html academy">
           </a>
           <p>Сделано в <a href="#"><img src="" alt=""></a>&copy; 2016</p>
         </div>

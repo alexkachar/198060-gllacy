@@ -8,10 +8,10 @@
   <body>
 
     <header class="page-header">
-      <div class="container">
+      <div class="container clearfix">
 
         <a class="page-header-logo" href="index.html">
-          <img src="img/page-header-logo.svg" alt="Glacy Shop">
+          <img src="img/page-header-logo.svg" width="153" height="63" alt="Glacy Shop">
         </a>
 
         <nav class="page-nav">
@@ -38,12 +38,12 @@
       </div> <!-- от контейнера-->
 
       <div class="page-header-worktime">
-        <p>С 10 до 20, ежедневно<span>8 812 450-25-25</span></p>
+        <p>С 10 до 20, ежедневно<br><span>8 812 450-25-25</span></p>
       </div>
 
     </header>
 
-    <main  class="content">>
+    <main  class="content">
       <div class="containter">
 
         <ul class="breadcrumbs">
@@ -53,24 +53,28 @@
         </ul>
         <h1>Сливочное мороженное</h1>
         <form class="filter" action="post">
-          <div class="filter-item">
-            <span class="filter-item-title">Сортировка:</span>
+          <fieldset class="filter-item">
+            <legend class="filter-item-title">Сортировка:</legend>
             <select>
               <option value="popularity">По популярности</option>
-              <option value="price">По цене</option>
+              <option value="price">Сначала недорогие</option>
+              <option value="price">Сначала дорогие</option>
+              <option value="price">По жирности</option>
             </select>
-          </div>
+          </fieldset>
 
-          <span class="filter-item-title">Цена: 100 руб. - 500 руб.</span>
-          <!-- Есть проблема с разметкой шкалы-->
-          <div class="scale-container">
-            <div class="scale-toggle-1"></div>
-            <div class="scale-toggle-2"></div>
-            <div class="scale-line"></div>
-          </div>
+          <fieldset class="filter-item">
+            <legend class="filter-item-title">Цена:</legend>
+            <!-- Есть проблема с разметкой шкалы-->
+            <div class="scale-container">
+              <div class="scale-toggle-1"> 100 руб. - 500 руб.</div>
+              <div class="scale-toggle-2"></div>
+              <div class="scale-line"></div>
+            </div>
+          </fieldset>
 
-          <div class="filter-item">
-            <span class="filter-item-title">Жирность:</span>
+          <fieldset class="filter-item">
+            <legend class="filter-item-title">Жирность:</legend>
             <div class="radio-block-richness">
               <input class="radio-circle" type="radio" id="zero-percent">
               <label for="zero-percent">0%</label>
@@ -81,26 +85,29 @@
               <input class="radio-circle" type="radio" id="more-than-thirty-percent">
               <label for="up-to-ten-percent">Выше 30%</label>
             </div>
-          </div>
+          </fieldset>
 
 
 
-
-          <span class="filter-item-title">Наполнители:</span>
-          <div class="checkbox-block-fillers">
-            <input class="checkbox-square" type="checkbox" id="chocolate" checked>
-            <label for="chocolate">шоколадные</label>
-            <input class="checkbox-square" type="checkbox" id="sugar-frosted" checked>
-            <label for="sugar-frosted">сахарные присыпки</label>
-            <input class="checkbox-square" type="checkbox" id="fruts">
-            <label for="fruts">фрукты</label>
-            <input class="checkbox-square" type="checkbox" id="syrups">
-            <label for="syrups">сиропы</label>
-            <input class="checkbox-square" type="checkbox" id="jams">
-            <label for="jams">джемы</label>
-          </div>
-          <button class="btn-filter" type="submit" name="submit"></button>
+          <fieldset class="filter-item">
+            <legend class="filter-item-title">Наполнители:</legend>
+            <div class="checkbox-block-fillers">
+              <input class="checkbox-square" type="checkbox" id="chocolate" checked>
+              <label for="chocolate">шоколадные</label>
+              <input class="checkbox-square" type="checkbox" id="sugar-frosted" checked>
+              <label for="sugar-frosted">сахарные присыпки</label>
+              <input class="checkbox-square" type="checkbox" id="fruts">
+              <label for="fruts">фрукты</label>
+              <input class="checkbox-square" type="checkbox" id="syrups">
+              <label for="syrups">сиропы</label>
+              <input class="checkbox-square" type="checkbox" id="jams">
+              <label for="jams">джемы</label>
+            </div>
+          </fieldset>
+          <button class="btn-filter" type="submit" name="submit">Отправить</button>
         </form>
+
+
 
         <div class="products">
           <div class="products-item">
@@ -187,12 +194,12 @@
 
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container clearfix">
         <ul class="social">
-          <li><a class="social-btn social-btn-tw" href="#">Твиттер</a></li>
-          <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
-          <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-          <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+          <li><a class="social-btn social-btn-tw" href="#"><img src="img/icon-twitter.svg" height="40" width="40"/></a></li>
+          <li><a class="social-btn social-btn-inst" href="#"><img src="img/icon-instagram.svg" height="40" width="40"/></a></li>
+          <li><a class="social-btn social-btn-fb" href="#"><img src="img/icon-facebook.svg" height="40" width="40"/></a></li>
+          <li><a class="social-btn social-btn-vk" href="#"><img src="img/icon-vk.svg" height="40" width="40"/></a></li>
         </ul>
         <ul class="page-footer-nav">
           <li><a href="#">Для поставщиков</a></li>
@@ -202,9 +209,9 @@
         </ul>
         <div class="page-footer-copyright">
           <a class="page-footer-logo">
-            <img src="img/academy-logo.svg" alt="">
+            <img src="img/academy-logo.svg" width="108" height="37" alt="html academy">
           </a>
-          <p>Сделано в <a href="#">HTML Academy</a>&copy; 2016</p>
+          <p>Сделано в <a href="#"><img src="" alt=""></a>&copy; 2016</p>
         </div>
       </div>
     </footer>

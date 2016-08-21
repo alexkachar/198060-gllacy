@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси: каталог</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 
-    <header class="page-header">
+  <div class="container">
+
+    <header class="page-header clearfix">
       <div class="container clearfix">
 
         <a class="page-header-logo" href="index.html">
@@ -34,17 +38,15 @@
           <li><a class="user-block-btn user-block-btn-basket" href="">2 товара</a></li>
         </ul>
 
+        <div class="page-header-worktime">
+          <p>С 10 до 20, ежедневно<br><span>8 812 450-25-25</span></p>
+        </div>
 
-      </div> <!-- от контейнера-->
-
-      <div class="page-header-worktime">
-        <p>С 10 до 20, ежедневно<br><span>8 812 450-25-25</span></p>
-      </div>
 
     </header>
 
     <main  class="content">
-      <div class="containter">
+
 
         <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
@@ -193,28 +195,27 @@
     </main>
 
 
-    <footer class="page-footer">
-      <div class="container clearfix">
-        <ul class="social">
-          <li><a class="social-btn social-btn-tw" href="#"><img src="img/icon-twitter.svg" height="40" width="40"/></a></li>
-          <li><a class="social-btn social-btn-inst" href="#"><img src="img/icon-instagram.svg" height="40" width="40"/></a></li>
-          <li><a class="social-btn social-btn-fb" href="#"><img src="img/icon-facebook.svg" height="40" width="40"/></a></li>
-          <li><a class="social-btn social-btn-vk" href="#"><img src="img/icon-vk.svg" height="40" width="40"/></a></li>
-        </ul>
-        <ul class="page-footer-nav">
-          <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
-        </ul>
-        <div class="page-footer-copyright">
-          <a class="page-footer-logo">
-            <img src="img/academy-logo.svg" width="108" height="37" alt="html academy">
-          </a>
-          <p>Сделано в <a href="#"><img src="" alt=""></a>&copy; 2016</p>
-        </div>
-      </div>
-    </footer>
+    <div class="container">
 
-  </body>
-</html>
+      <footer class="page-footer">
+
+          <ul class="social">
+            <li><a class="social-btn social-btn-tw" href="#">twitter</a></li>
+            <li><a class="social-btn social-btn-inst" href="#">instagram</a></li>
+            <li><a class="social-btn social-btn-fb" href="#">facebook</a></li>
+            <li><a class="social-btn social-btn-vk" href="#">вконтакте</a></li>
+          </ul>
+          <ul class="page-footer-nav">
+            <li><a href="#">Для поставщиков</a></li>
+            <li><a href="#">Наши документы</a></li>
+            <li><a href="#">О производстве</a></li>
+            <li><a href="#">Экологические стандарты</a></li>
+          </ul>
+          <div class="page-footer-copyright">
+            <a class="page-footer-logo">
+              <img src="img/academy-logo.svg" width="108" height="37" alt="html academy">
+            </a>
+            <p>Сделано в <a href="#"><img src="" alt=""></a>&copy; 2016</p>
+          </div>
+
+      </footer>

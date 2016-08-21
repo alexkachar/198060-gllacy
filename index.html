@@ -5,11 +5,12 @@
     <title>Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
+  <div class="container">
+    <header class="page-header clearfix">
 
-    <header class="page-header">
-      <div class="container clearfix">
 
         <div class="page-header-logo">
           <img src="img/page-header-logo.svg" width="153" height="63" alt="Glacy Shop">
@@ -17,7 +18,16 @@
 
         <nav class="page-nav">
           <ul>
-            <li><a href="catalog.html">Каталог</a></li>
+            <li>
+              <a href="#">Каталог</a>
+              <ul class="page-nav-sub">
+                <li class="highligted">Новинки</li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лёд</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О Компании</a></li>
           </ul>
@@ -35,17 +45,13 @@
           <li><a class="user-block-btn user-block-btn-basket" href="">Пусто</a></li>
         </ul>
 
-
-      </div> <!-- от контейнера-->
-
-      <div class="page-header-worktime">
-        <p>С 10 до 20, ежедневно<br><span>8 812 450-25-25</span></p>
-      </div>
+        <div class="page-header-worktime">
+          <p>С 10 до 20, ежедневно<span>8 812 450-25-25</span></p>
+        </div>
 
     </header>
 
     <main class="content">
-      <div class="container">
 
         <!-- <div class="slider">
             <input type="radio" id="btn-1" name="toggle" checked>
@@ -138,11 +144,9 @@
             </section>
           </div>
 
-      </div> <!-- / .container -->
+  </div> <!-- / .container -->
 
       <div class="map">
-        <div class="map-frame"><img src="img/map.jpg" width="1200px" height="436px" alt=""></div>
-        <div class="container">
           <div class="map-info">
             <p>Адрес главного офиса и офлайн-магазина:<br>
               <strong class="map-bold">ул.Большая Конюшенная 19/8, Санкт-Петербург</strong>
@@ -152,20 +156,19 @@
             (с 10 до 20 ежедневно)</p>
             <a href="#" class="btn btn-block">Форма обратной связи</a>
           </div>
-        </div>
       </div>
 
     </main>
 
-
+  <div class="container">
 
     <footer class="page-footer">
-      <div class="container clearfix">
+
         <ul class="social">
-          <li><a class="social-btn social-btn-tw" href="#"><img src="img/icon-twitter.svg" height="40" width="40"/></a></li>
-          <li><a class="social-btn social-btn-inst" href="#"><img src="img/icon-instagram.svg" height="40" width="40"/></a></li>
-          <li><a class="social-btn social-btn-fb" href="#"><img src="img/icon-facebook.svg" height="40" width="40"/></a></li>
-          <li><a class="social-btn social-btn-vk" href="#"><img src="img/icon-vk.svg" height="40" width="40"/></a></li>
+          <li><a class="social-btn social-btn-tw" href="#">twitter</a></li>
+          <li><a class="social-btn social-btn-inst" href="#">instagram</a></li>
+          <li><a class="social-btn social-btn-fb" href="#">facebook</a></li>
+          <li><a class="social-btn social-btn-vk" href="#">вконтакте</a></li>
         </ul>
         <ul class="page-footer-nav">
           <li><a href="#">Для поставщиков</a></li>
@@ -179,9 +182,10 @@
           </a>
           <p>Сделано в <a href="#"><img src="" alt=""></a>&copy; 2016</p>
         </div>
-      </div>
+
     </footer>
 
+  </div>
 
   </body>
 </html>

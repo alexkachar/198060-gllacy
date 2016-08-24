@@ -418,6 +418,7 @@ body > input[type="radio"] {
 }
 
 .products-item {
+  position: relative;
   display: inline-block;
   width: 267px;
   min-height: 325px;
@@ -446,7 +447,7 @@ body > input[type="radio"] {
 
 .products-item-price {
   position: absolute;
-  bottom: 80px;
+  top: 210px;
   font-size: 45px;
   font-weight: bold;
   color: #ffffff;
@@ -454,6 +455,28 @@ body > input[type="radio"] {
 
 .products-item-price span {
   font-size: 30px;
+}
+
+
+.ruble::after {
+  position: absolute;
+  right: 37px;
+  top: 15px;
+  height: 37px;
+  width: 32px;
+  content: "";
+  background: url("../img/icon-ruble.svg") 50% 50% no-repeat;
+}
+
+.hit::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  content: "";
+  background: #ffffff url('../img/icon-hit.png') no-repeat 50% 50%;;
+  border-radius: 50%;
 }
 
 /*блок features*/
@@ -470,27 +493,67 @@ body > input[type="radio"] {
 .features h2 {
   font-size: 24px;
   color: #323232;
+  font-weight: 700;
   margin: 0;
+  margin-bottom: 30px;
 }
 
-.features-item {
+.features-item{
+  float: left;
+  margin-left: 40px;
+  margin-bottom: 30px;
   position: relative;
-  display: inline-block;
-  width: 484px;
-  vertical-align: top;
+  width: 475px;
   color: #323232;
+  font-weight: 400;
+  font-size: 16px;
   margin-right: 26px;
 }
 
-/*.features-item-ice::before {
-  content: ""
-  display: block;
+.features-row {
+  padding-left: 20px;
+}
+
+.features-item-ice::before {
   position: absolute;
-  left: -40px;
+  top: -18px;
+  left: -60px;
   width: 50px;
   height: 50px;
-  background-image: url("../img/icon-ice-cream.svg");
-}*/
+  content: "";
+  background: url('../img/icon-ice-cream.svg') no-repeat 50% 50%;
+}
+
+.features-item-leaf::before {
+  position: absolute;
+  top: -18px;
+  left: -60px;
+  width: 50px;
+  height: 50px;
+  content: "";
+  background: url('../img/icon-leaf.svg') no-repeat 50% 50%;
+}
+
+.features-item-cow::before {
+  position: absolute;
+  top: -18px;
+  left: -60px;
+  width: 50px;
+  height: 50px;
+  content: "";
+  background: url('../img/icon-cow.svg') no-repeat 50% 50%;
+}
+
+.features-item-thermometer::before {
+  position: absolute;
+  top: -18px;
+  left: -60px;
+  width: 50px;
+  height: 50px;
+  content: "";
+  background: url('../img/icon-thermometer.svg') no-repeat 50% 50%;
+}
+
 
 /*блок info*/
 
@@ -659,16 +722,19 @@ body > input[type="radio"] {
 
 }
 
-.heart {
+a.heart {
   position: relative;
 }
-/*.heart:after {
+
+a.heart::after {
   position: absolute;
-  left: 50px;
+  left: -20px;
+  top: 0;
   width: 15px;
   height: 13px;
-  background: red;
-}*/
+  content: "";
+  background: url("../img/icon-heart.svg") 50% 50% no-repeat;
+}
 
 .page-footer-copyright {
   float: right;

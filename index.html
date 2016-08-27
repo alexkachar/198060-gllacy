@@ -8,6 +8,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
+
+
     <input type="radio" id="btn-1" name="toggle" checked>
     <input type="radio" id="btn-2" name="toggle">
     <input type="radio" id="btn-3" name="toggle">
@@ -39,11 +42,39 @@
         </nav>
 
 
-        <ul class="user-block">
-          <li><button class="user-block-btn user-block-btn-search" type="button"></button></li>
-          <li><button class="user-block-btn user-block-btn-enter" type="button">Вход</button></li>
-          <li><button class="user-block-btn user-block-btn-basket" type="button">Пусто</button></li>
-        </ul>
+        <div class="user-block">
+
+          <div class="user-block-item">
+            <a href="#" class="user-block-search">&nbsp;</a>
+            <div class="search-form-container">
+              <form method="POST" class="search-form">
+                <input type="text" placeholder="Что ищем?">
+              </form>
+            </div>
+          </div>
+
+          <div class="user-block-item">
+            <a href="#" class="user-block-enter">Вход</a>
+            <div class="enter-form-container">
+              <form method="POST" class="enter-form">
+                <input type="email" placeholder="Электронная почта">
+                <input type="password" placeholder="Пароль">
+                <div class="enter-form-container-inner clearfix">
+                  <input type="submit" value="Войти" class="btn">
+                  <div>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="user-block-item">
+            <a href="#" class="user-block-cart">Пусто</a>
+          </div>
+
+        </div>
 
         <div class="page-header-worktime">
           <p>С 10 до 20, ежедневно<span>8 812 450-25-25</span></p>
@@ -124,7 +155,7 @@
             </div>
             <div class="features-row clearfix">
               <div class="features-item features-item-leaf">Для приготовления мороженного используется настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</div>
-              <div class="features-item features-item-thermometer">Доставка нашего мороженного до заказчиков осущуствляется в специальном термопаке, который не дает мороженному растаять в пути и  позволяе сохранить свой превосходный вкус.</div>
+              <div class="features-item features-item-thermometer">Доставка нашего мороженного до заказчиков осущуствляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить свой превосходный вкус.</div>
             </div>
           </section>
 
@@ -194,7 +225,18 @@
 
   </div>
 
-
 </div>
+
+
+<section class="callback-form-container">
+  <div class="modal-content-close"></div>
+  <h3 class="callback-form-header">Мы обязательно вам ответим!</h3>
+  <form class="callback-form" action="index.html" method="post">
+    <input type="name" placeholder="Как вас зовут?">
+    <input type="email" placeholder="Ваша почта для ответа">
+    <textarea name="callback-text" rows="5"></textarea>
+    <input type="submit" class="btn">
+  </form>
+</section>
   </body>
 </html>

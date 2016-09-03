@@ -1,9 +1,14 @@
-var modalOpen = document.querySelector("callback-form-btn");
+var modalOpen = document.querySelector(".js-btn-callback");
 
-var popup = document.querySelector("callback-form-container");
-var close = popup.querySelector("modal-content-close");
+var popup = document.querySelector(".modal");
+var close = popup.querySelector(".modal-close");
 
-link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("callback-form-container-show");
-}
+modalOpen.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.add("modal-show");
+});
+
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.remove("modal-show");
+});

@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Глейси: каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="container">
+  <header class="main-header clearfix">
 
-    <header class="main-header clearfix">
+    <div class="container">
 
       <div class="main-header-logo">
         <a href="index.html"><img src="img/page-header-logo.svg" width="154" height="64" alt="Glacy Shop"></a>
@@ -25,7 +25,7 @@
             <a href="#"><span>Каталог</span></a>
             <ul class="main-nav-sub">
               <li><span>Новинки</span></li>
-              <li class="main-nav-subitem"><a href="catalog.html">Сливочное</a></li>
+              <li class="main-nav-subitem active"><a>Сливочное</a></li>
               <li class="main-nav-subitem"><a href="">Щербеты</a></li>
               <li class="main-nav-subitem"><a href="">Фруктовый лед</a></li>
               <li class="main-nav-subitem"><a href="">Мелорин</a></li>
@@ -111,9 +111,13 @@
 
       </div>
 
-    </header>
+    </div> <!-- /.container -->
 
-    <main class="content">
+  </header>
+
+  <main class="content">
+
+    <div class="container">
 
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
@@ -121,9 +125,10 @@
         <li><span>Сливочное</span></li>
       </ul>
 
-      <h1 class="catalog-title">Сливочное мороженое</h1>
+      <h1>Сливочное мороженое</h1>
 
       <form class="filter" action="post">
+
         <fieldset class="filter-item">
           <legend>Сортировка:</legend>
           <div class="filter-box select-wrap">
@@ -177,10 +182,13 @@
             <label for="jams">джемы</label>
           </div>
         </fieldset>
+
         <button class="filter-btn" type="submit" name="submit">Применить</button>
+
       </form>
 
       <div class="products">
+
         <article class="products-item">
           <figure class="products-item-img"><img src="img/item-orange.jpg" alt="Изображение товара"></figure>
           <div class="products-item-price">310<span class="ruble">Р</span><span class="kilogram">/кг</span></div>
@@ -268,45 +276,48 @@
 
       <!--переключатель страниц-->
       <div class="paginator">
-        <a href="#" class="paginator-control paginator-control-prev disabled">prev</a>
-        <span>1</span>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#" class="paginator-control paginator-control-next">next</a>
+        <a class="paginator-control paginator-control-prev disabled" href="#">prev</a>
+        <a class="paginator-btn active">1</a>
+        <a class="paginator-btn" href="#">2</a>
+        <a class="paginator-btn" href="#">3</a>
+        <a class="paginator-btn" href="#">4</a>
+        <a class="paginator-btn" href="#">5</a>
+        <a class="paginator-control paginator-control-next" href="#">next</a>
       </div>
 
-  </div>
+    </div>
+
   </main>
 
-  <div class="container">
+  <footer class="page-footer page-footer-line">
 
-    <footer class="page-footer page-footer-line">
-      <div class="container">
+    <div class="container">
 
-        <ul class="social">
-          <li><a class="social-btn social-btn-tw" href="#">twitter</a></li>
-          <li><a class="social-btn social-btn-inst" href="#">instagram</a></li>
-          <li><a class="social-btn social-btn-fb" href="#">facebook</a></li>
-          <li><a class="social-btn social-btn-vk" href="#">вконтакте</a></li>
-        </ul>
-        <div class="page-footer-nav clearfix">
-          <a class="active" href="#">Для поставщиков</a>
-          <a href="#">Наши документы</a>
-          <a href="#">О производстве</a>
-          <a href="#">Экологические стандарты</a>
-        </div>
-        <div class="page-footer-copyright">
-          <a class="page-footer-logo" href="htmlacademy.ru">
-            <img src="img/academy-logo.svg" width="108" height="37" alt="html academy">
-          </a>
-          <p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>
-        </div>
+      <ul class="social">
+        <li><a class="social-btn social-btn-tw" href="#">twitter</a></li>
+        <li><a class="social-btn social-btn-inst" href="#">instagram</a></li>
+        <li><a class="social-btn social-btn-fb" href="#">facebook</a></li>
+        <li><a class="social-btn social-btn-vk" href="#">вконтакте</a></li>
+      </ul>
 
+      <div class="page-footer-nav clearfix">
+        <a class="active" href="#">Для поставщиков</a>
+        <a href="#">Наши документы</a>
+        <a href="#">О производстве</a>
+        <a href="#">Экологические стандарты</a>
       </div>
 
-    </footer>
+      <div class="page-footer-copyright">
+        <a class="page-footer-logo" href="htmlacademy.ru">
+          <img src="img/academy-logo.svg" width="108" height="37" alt="html academy">
+        </a>
+        <p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>
+      </div>
+
+    </div>
+
+  </footer>
 
 </body>
+
 </html>

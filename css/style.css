@@ -79,7 +79,7 @@ fieldset {
 textarea {
   width: 100%;
   height: 44px;
-  padding: 9px 15px;
+  padding: 9px 12px;
   border: 1px solid #d3d3d2;
   border-radius: 3px;
   margin-bottom: 20px;
@@ -253,7 +253,7 @@ input[type="checkbox"]:disabled + label:after {
 
 .main-nav-item > a {
   display: block;
-  padding: 4px 14px;
+  padding: 6px 14px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -306,22 +306,28 @@ input[type="checkbox"]:disabled + label:after {
   display: block;
 }
 
+
+
 .main-nav-sub span {
   position: relative;
   display: block;
-  margin: 0 6px 5px 14px;
-  padding: 13px 7px;
+  margin: 0 11px 5px 6px;
+  padding: 11px 7px 11px 14px;
   font-weight: 700;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
 .main-nav-sub a {
   display: block;
-  padding: 7px 21px;
+  padding: 5px 21px;
   color: #323232;
   font-weight: 400;
   white-space: nowrap;
   text-decoration: none;
+}
+
+.main-nav-subitem {
+  margin-bottom: 5px;
 }
 
 .main-nav-subitem:hover a {
@@ -354,7 +360,7 @@ input[type="checkbox"]:disabled + label:after {
   position: relative;
   float: left;
   margin-left: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
 .user-item-box {
@@ -362,8 +368,8 @@ input[type="checkbox"]:disabled + label:after {
   position: absolute;
   z-index: 1;
   top: 100%;
-  right: 0;
-  padding: 20px 15px 20px 15px;
+  right: -2px;
+  padding: 19px 15px 22px 19px;
   border-radius: 5px;
   background-color: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
@@ -384,16 +390,16 @@ input[type="checkbox"]:disabled + label:after {
 }
 
 .user-item-search .input {
-  width:311px;
-  margin:0;
+  width: 311px;
+  margin: 0;
 }
 
 .user-item-login a {
   display: block;
-  margin-bottom: 8px;
   text-decoration: underline;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 1.7;
   color: #000;
 }
 
@@ -403,27 +409,28 @@ input[type="checkbox"]:disabled + label:after {
 }
 
 .user-item-login .input {
-  width:241px;
+  width: 241px;
 }
 
 .user-item-login .btn {
   float: left;
-  margin-right: 18px;
-  padding:10px 25px;
+  margin-right: 19px;
+  padding: 11px 24px;
 }
 
 .user-item:hover .user-btn-login {
   color: #323232;
-  background: #ffffff url("../img/icon-enter-hover.svg") no-repeat 15px 7px;
+  background: #ffffff url("../img/icon-enter-hover.svg") no-repeat 17px 6px;
 }
 
 .worktime {
   display: block;
   position: absolute;
-  top: 75px;
+  top: 71px;
   right: 27px;
   font-size: 14px;
   font-weight: 700;
+  line-height: 1.4;
   text-align: right;
 }
 
@@ -448,12 +455,12 @@ input[type="checkbox"]:disabled + label:after {
   padding: 8px 17px 7px 43px;
   font-size: 14px;
   border-radius: 30px;
-  background: rgba(255, 255, 255, .2) url("../img/icon-enter.svg") no-repeat 15px 7px;
+  background: rgba(255, 255, 255, .2) url("../img/icon-enter.svg") no-repeat 17px 6px;
 }
 
 .user-btn-cart {
   display: block;
-  padding: 8px 34px 7px 45px;
+  padding: 8px 17px 7px 45px;
   font-size: 14px;
   font-weight: 400;
   border-radius: 30px;
@@ -601,7 +608,7 @@ input[type="checkbox"]:disabled + label:after {
 
 .slider {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
   padding-top: 320px;
   text-align: center;
   color: #ffffff;
@@ -668,6 +675,10 @@ input[type="checkbox"]:disabled + label:after {
 
 /*Классы акций*/
 
+.info-item-promo {
+  min-height: 229px;
+}
+
 .info-item-promo-strawberry {
   background-image: url("../img/bg-strawberry-promo.jpg");
 }
@@ -696,8 +707,8 @@ input[type="checkbox"]:disabled + label:after {
 }
 
 .info-item .btn {
-  padding-left: 19px;
-  padding-right: 19px;
+  padding-left: 23px;
+  padding-right: 23px;
 }
 
 /*Классы каталога*/
@@ -707,7 +718,7 @@ input[type="checkbox"]:disabled + label:after {
   position: relative;
   margin-left: -13px;
   margin-right: -13px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .products-item {
@@ -772,11 +783,12 @@ input[type="checkbox"]:disabled + label:after {
 
 .ruble {
   position: relative;
-  top: -3px;
+  top: -2px;
   display: inline-block;
   vertical-align: middle;
   height: 37px;
   width: 32px;
+  margin-left: 3px;
   font-size: 0;
   background: url("../img/icon-ruble.svg") 50% 50% no-repeat;
 }
@@ -817,8 +829,8 @@ input[type="checkbox"]:disabled + label:after {
 .features {
   min-height: 306px;
   background-image: url("../img/bg-waffle.jpg");
-  border-radius: 20px;
-  padding: 28px 0 0 21px;
+  border-radius: 15px;
+  padding: 26px 0 0 21px;
   margin-bottom: 40px;
 }
 
@@ -835,19 +847,19 @@ input[type="checkbox"]:disabled + label:after {
   display: inline-block;
   vertical-align: top;
   padding-left: 56px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   margin-right: 25px;
   position: relative;
-  width: 530px;
+  width: 535px;
   color: #323232;
   font-weight: 400;
   font-size: 16px;
-
+  line-height: 1.4;
 }
 
 .features-item::before {
   position: absolute;
-  top: -16px;
+  top: -13px;
   left: 0px;
   width: 47px;
   height: 47px;
@@ -873,7 +885,7 @@ input[type="checkbox"]:disabled + label:after {
 /*блок info*/
 
 .info {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   margin-left: -13px;
   margin-right: -13px;
 }
@@ -888,16 +900,18 @@ input[type="checkbox"]:disabled + label:after {
   margin-left: 13px;
   margin-right: 13px;
   border-radius: 15px;
-  min-height: 219px;
 }
 
 .info-item-blog {
+  margin-bottom: 7px;
+  padding-left: 20;
   background-image: url("../img/bg-strawberry.jpg");
+  min-height: 219px;
 }
 
 .info-item-blog h3 {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 8px;
+  margin-bottom: 6px;
   font-size: 16px;
   font-weight: 500;
   color: #323232;
@@ -908,6 +922,8 @@ input[type="checkbox"]:disabled + label:after {
   width: 300px;
   font-size: 24px;
   font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 1.2;
   color: #323232;
 }
 
@@ -919,23 +935,25 @@ input[type="checkbox"]:disabled + label:after {
   position: relative;
   padding: 6px;
   background-image: url("../img/bg-post.png");
+  min-height: 219px;
 }
 
 .info-item-cover {
   margin: 0;
-  height: 100%;
   width: 100%;
+  min-height: 208px;
   padding: 20px;
   background-color: #f8f7f4;
-  border-radius: 15px;
+  border-radius: 9px;
 }
 
 .info-item-cover p {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+  margin-top: 9px;
   color: #5a5a5a;
   font-weight: 400;
   font-size: 16px;
-
+  line-height: 1.4;
 }
 
 .info-item-form {
@@ -943,9 +961,13 @@ input[type="checkbox"]:disabled + label:after {
 }
 
 .info-item-form .input {
-  width: 360px;
-  margin-right: 10px;
+  width: 368px;
+  margin-right: 8px;
   margin-bottom: 0;
+}
+
+.info-item-form .btn {
+  padding: 9px 18px 12px;
 }
 
 /*блок .map*/
@@ -964,21 +986,22 @@ input[type="checkbox"]:disabled + label:after {
 
 .map-info {
   position: absolute;
-  padding-top: 15px;
   right: 26px;
   top: 50%;
   width: 302px;
+  min-height: 305px;
+  padding: 29px 25px 31px 25px;
   max-height: 400px;
   border-radius: 15px;
+  line-height: 1.3;
   background-color: #fefdfd;
-  padding: 35px 25px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 .map p {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-weight: 400;
   font-size: 14px;
 }
@@ -994,7 +1017,7 @@ input[type="checkbox"]:disabled + label:after {
 /*блок .footer*/
 
 .page-footer {
-  padding-top: 30px;
+  padding-top: 19px;
   min-height: 103px;
 }
 
@@ -1002,16 +1025,17 @@ input[type="checkbox"]:disabled + label:after {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 1200px;
-  height: 1px;
+  right: 0;
+  width: 1146px;
+  height: 2px;
   padding-right: 27px;
   padding-left: 27px;
-  background: rgba(255, 255, 255, .2);
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 10;
 }
 
 .social {
-  padding: 4px 0;
+  padding: 16px 0;
   float: left;
   width: 267px;
   margin-right: 156px;
@@ -1059,7 +1083,7 @@ input[type="checkbox"]:disabled + label:after {
 .page-footer-nav {
   float: left;
   width: 360px;
-  margin: 0 auto;
+  margin: 11px auto 0;
 }
 
 .page-footer-nav a {
@@ -1075,7 +1099,7 @@ input[type="checkbox"]:disabled + label:after {
 .page-footer-nav a::before {
   display: none;
   position: absolute;
-  left: -20px;
+  left: -22px;
   top: 0;
   width: 15px;
   height: 13px;
@@ -1097,7 +1121,7 @@ input[type="checkbox"]:disabled + label:after {
 
 .page-footer-copyright {
   float: right;
-  width: 191px;
+  width: 190px;
 }
 
 .page-footer-copyright p {
@@ -1114,7 +1138,7 @@ input[type="checkbox"]:disabled + label:after {
 
 .page-footer-logo {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 /*стили .breadcrumbs*/
@@ -1365,7 +1389,8 @@ input[type="checkbox"]:disabled + label:after {
   top: 50%;
   left: 50%;
   width: 478px;
-  padding: 15px 25px;
+  height: 442px;
+  padding: 19px 24px 0 23px;
   background: #f8f7f4;
   border-radius: 10px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -1415,7 +1440,7 @@ input[type="checkbox"]:disabled + label:after {
   color: #323232;
   font-size: 24px;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .modal .input {
@@ -1425,9 +1450,9 @@ input[type="checkbox"]:disabled + label:after {
 
 .modal .btn {
   float: right;
-  margin-bottom: 7px;
 }
 
 .modal textarea {
   height: 155px;
+  margin-bottom: 25px;
 }

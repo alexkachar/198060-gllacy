@@ -22,7 +22,7 @@ body {
 
 h1 {
   margin-top: 0;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   font-size: 35px;
   font-weight: 700;
 }
@@ -483,6 +483,7 @@ input[type="checkbox"]:disabled + label::after {
   text-align: right;
   color: #323232;
 }
+
 .user-table {
   margin-bottom: 14px;
   padding-bottom: 11px;
@@ -498,7 +499,7 @@ input[type="checkbox"]:disabled + label::after {
 }
 
 .user-table td {
-  padding: 13px 9px;
+padding: 13px 6px;
   vertical-align: middle;
 }
 
@@ -576,10 +577,10 @@ input[type="checkbox"]:disabled + label::after {
 .user-table img {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 3px;
   width: 34px;
   height: 34px;
-  margin-top: -17px;
+  margin-top: -18px;
   border-radius: 50%;
 }
 
@@ -742,7 +743,7 @@ input[type="checkbox"]:disabled + label::after {
   position: relative;
   display: inline-block;
   width: 293px;
-  min-height: 344px;
+  min-height: 343px;
   vertical-align: top;
   padding-left: 13px;
   padding-right: 13px;
@@ -834,7 +835,7 @@ input[type="checkbox"]:disabled + label::after {
 .products-item .btn {
   display: none;
   position: absolute;
-  top: 339px;
+  top: 338px;
   left: 50%;
   padding-left: 17px;
   padding-right: 17px;
@@ -1046,7 +1047,7 @@ input[type="checkbox"]:disabled + label::after {
 
 .page-footer {
   position: relative;
-  padding-top: 19px;
+  padding-top: 21px;
   min-height: 103px;
 }
 
@@ -1378,8 +1379,8 @@ input[type="checkbox"]:disabled + label::after {
 /*переключатель страниц*/
 
 .paginator {
-  margin-bottom: 30px;
-  margin-top: 50px;
+  margin-bottom: 28px;
+  margin-top: 49px;
   font-size: 0;
   text-align: right;
 }

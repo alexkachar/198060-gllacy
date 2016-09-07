@@ -698,11 +698,11 @@ input[type="checkbox"]:disabled + label::after {
 }
 
 .info-item-promo-strawberry {
-  background-image: url("../img/bg-strawberry-promo.jpg");
+  background: #cc345f url("../img/bg-strawberry-promo.jpg");
 }
 
 .info-item-promo-choco {
-  background: url("../img/bg-chocolate.jpg");
+  background: #6f5149 url("../img/bg-chocolate.jpg");
 }
 
 .info-item-promo .btn {
@@ -851,7 +851,7 @@ input[type="checkbox"]:disabled + label::after {
 
 .features {
   min-height: 306px;
-  background-image: url("../img/bg-waffle.jpg");
+  background: #f1e7d0 url("../img/bg-waffle.jpg");
   border-radius: 15px;
   padding: 26px 0 0 21px;
   margin-bottom: 40px;
@@ -927,7 +927,7 @@ input[type="checkbox"]:disabled + label::after {
 
 .info-item-blog {
   margin-bottom: 7px;
-  background-image: url("../img/bg-strawberry.jpg");
+  background: #ffffff url("../img/bg-strawberry.jpg");
   height: 219px;
   overflow: hidden;
 }
@@ -1002,7 +1002,7 @@ input[type="checkbox"]:disabled + label::after {
   position: relative;
   padding: 0;
   color: #323232;
-  background: url("../img/map.jpg") no-repeat 50% 50% / cover;
+  background: #f7f1d9 url("../img/map.jpg") no-repeat 50% 50% / cover;
 }
 
 .map .container {

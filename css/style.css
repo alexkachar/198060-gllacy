@@ -499,7 +499,7 @@ input[type="checkbox"]:disabled + label::after {
 }
 
 .user-table td {
-padding: 13px 6px;
+  padding: 13px 6px;
   vertical-align: middle;
 }
 
@@ -1047,7 +1047,7 @@ padding: 13px 6px;
 
 .page-footer {
   position: relative;
-  padding-top: 21px;
+  padding-top: 20px;
   min-height: 103px;
 }
 
@@ -1065,7 +1065,7 @@ padding: 13px 6px;
 }
 
 .social {
-  padding: 17px 0 0 2px;
+  padding: 18px 0 0 2px;
   float: left;
   width: 267px;
   margin-right: 156px;

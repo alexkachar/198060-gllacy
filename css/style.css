@@ -1519,3 +1519,30 @@ input[type="checkbox"]:disabled + label::after {
   margin-bottom: 19px;
   font-size: 16px;
 }
+
+.modal-js-off {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 478px;
+  height: 442px;
+  padding: 16px 26px 0 23px;
+  background: #f8f7f4;
+  border-radius: 10px;
+  z-index: 300;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.modal-js-off h3 {
+  color: #323232;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+
+.modal-js-off .btn {
+  float: right;
+  padding-left: 23px;
+  padding-right: 23px;
+}

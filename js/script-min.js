@@ -1,0 +1,1 @@
+var modalOpen=document.querySelector(".js-btn-callback"),popup=document.querySelector(".modal"),close=popup.querySelector(".modal-close");modalOpen.addEventListener("click",function(a){a.preventDefault(),popup.classList.add("modal-show")}),close.addEventListener("click",function(a){a.preventDefault(),popup.classList.remove("modal-show")});

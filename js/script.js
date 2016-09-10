@@ -1,6 +1,6 @@
 var modalOpen = document.querySelector(".js-btn-callback");
 
-var popup = document.querySelector(".modal");
+var popup = document.querySelector(".overlay");
 var close = popup.querySelector(".modal-close");
 
 modalOpen.addEventListener("click", function(event) {

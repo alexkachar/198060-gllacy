@@ -999,11 +999,17 @@ input[type="checkbox"]:disabled + label::after {
 /*блок .map*/
 
 .map {
-  height: 430px;
   position: relative;
+  height: 430px;
+  width: 100%;
   padding: 0;
   color: #323232;
-  background: #f7f1d9 url("../img/map.jpg") no-repeat 50% 50% / cover;
+}
+
+.map-interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .map .container {
